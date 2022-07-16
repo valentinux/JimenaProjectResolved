@@ -32,11 +32,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun onClickIconAdd(productToAdd: ProductModel) {
         OrdersHandle(productToAdd).addProductToCurrentOrder(productToAdd)
-       /* val messageToToast: String
-        messageToToast = "El producto " +productToAdd.productname + " ha sido añadido al desayuno"
-        Toast.makeText(this, messageToToast, Toast.LENGTH_SHORT).show()
-
-        */
+        val messageToast ="Se ha añadido " + productToAdd.productname + " al desayuno"
+        Toast.makeText(this, messageToast, Toast.LENGTH_SHORT).show()
 
 
     }
