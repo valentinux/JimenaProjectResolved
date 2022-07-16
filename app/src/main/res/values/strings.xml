@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">La burra Jimena</string>
+    <string name="desayunos_personalizados">Desayunos personalizados</string>
+    <string name="logo_de_la_burra_jimena">logo de la burra Jimena</string>
+    <string name="user_button">User button</string>
+    <string name="log_in">Log in</string>
+    <string name="btnLoginDescription">Botón para hacer log in</string>
+    <string name="Entrar">Entrar</string>
+    <string name="String_product_description">Imagen del producto</string>
+    <string name="este_es_un_texto_de_prueba">Este es un texto de prueba</string>
+    <string name="imagen_del_producto">Imagen del producto</string>
+    <string name="IconHint">Pulsa dos veces en el icono para añadir al desayuno</string>
+    <string name="IconAddDescription">Icon for add product to order</string>
+    <string name="IconOrderDescription">Icon of orders</string>
+</resources>
