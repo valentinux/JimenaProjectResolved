@@ -1,6 +1,6 @@
 package com.example.jimenaproject
 
-data class ProductsModel(
+data class ProductModel(
     val idproduct: Long,
     val productname: String,
     val productdescription: String,

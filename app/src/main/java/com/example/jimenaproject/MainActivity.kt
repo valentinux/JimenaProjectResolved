@@ -1,8 +1,10 @@
 package com.example.jimenaproject
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.jimenaproject.adapter.OrdersHandle
 import com.example.jimenaproject.adapter.ProductsAdapter
 import com.example.jimenaproject.databinding.ActivityMainBinding
 
@@ -21,13 +23,21 @@ class MainActivity : AppCompatActivity() {
         initRecyclerView()
     }
 
-    private fun initRecyclerView(){
+    private fun initRecyclerView() {
 
         binding.recyclerProducts.layoutManager = LinearLayoutManager(this)
-        binding.recyclerProducts.adapter = ProductsAdapter(ProductsProvider.productsList) { onClickIconAdd(it) }
+        binding.recyclerProducts.adapter =
+            ProductsAdapter(ProductsProvider.productsList) { onClickIconAdd(it) }
     }
 
-    fun onClickIconAdd(productAdd: ProductsModel){
+    private fun onClickIconAdd(productToAdd: ProductModel) {
+        OrdersHandle(productToAdd).addProductToCurrentOrder(productToAdd)
+       /* val messageToToast: String
+        messageToToast = "El producto " +productToAdd.productname + " ha sido añadido al desayuno"
+        Toast.makeText(this, messageToToast, Toast.LENGTH_SHORT).show()
+
+        */
+
 
     }
 

@@ -12,6 +12,7 @@ data class UserEntity(
     @ColumnInfo(name = "lastname") val lastname: String,
     @ColumnInfo(name = "dni") val dni:String,
     @ColumnInfo(name = "email") val email: String,
-    @ColumnInfo(name = "address") val address: String,
+    @ColumnInfo(name = "address") val address: String
+
     )
 
