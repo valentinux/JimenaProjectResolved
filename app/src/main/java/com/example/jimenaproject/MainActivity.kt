@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.jimenaproject.adapter.OrdersHandle
 import com.example.jimenaproject.adapter.ProductsAdapter
+import com.example.jimenaproject.adapter.getCurrentOrderList
+import com.example.jimenaproject.adapter.setProductToCurrentOrderList
 import com.example.jimenaproject.databinding.ActivityMainBinding
+import com.example.jimenaproject.adapter.OrdersHandle as OrdersHandle1
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,11 +33,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onClickIconAdd(productToAdd: ProductModel) {
-        OrdersHandle(productToAdd).addProductToCurrentOrder(productToAdd)
-        val messageToast ="Se ha añadido " + productToAdd.productname + " al desayuno"
-        Toast.makeText(this, messageToast, Toast.LENGTH_SHORT).show()
+
+        setProductToCurrentOrderList(productToAdd)
+        val list: MutableList<ProductModel> = getCurrentOrderList()
+        println(list)
+        println(list.size)
 
 
     }
-
 }
