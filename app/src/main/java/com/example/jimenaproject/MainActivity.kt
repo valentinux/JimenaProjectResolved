@@ -35,9 +35,9 @@ class MainActivity : AppCompatActivity() {
     private fun onClickIconAdd(productToAdd: ProductModel) {
 
         setProductToCurrentOrderList(productToAdd)
-        val list: MutableList<ProductModel> = getCurrentOrderList()
-        println(list)
-        println(list.size)
+        val newlist: MutableList<ProductModel> = getCurrentOrderList()
+        println(newlist)
+        println(newlist.size)
 
 
     }
