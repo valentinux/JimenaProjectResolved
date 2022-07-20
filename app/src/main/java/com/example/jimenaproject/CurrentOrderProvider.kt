@@ -7,12 +7,12 @@ class CurrentOrderProvider {
         private val currentOrderList =  mutableListOf<ProductModel>()
 
         fun getCurrentOrder(): MutableList<ProductModel> {
-            return CurrentOrderList.currentOrderList
+            return currentOrderList
         }
 
         fun setCurrentOrder(ListToReturn: MutableList<ProductModel>){
             // TODO set to actualized list to database
-            Log.i("Lista", CurrentOrderList.currentOrderList.size.toString() )
+            Log.i("Lista", currentOrderList.size.toString() )
         }
     }
 
