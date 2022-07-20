@@ -5,10 +5,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.jimenaproject.adapter.ProductsAdapter
-import com.example.jimenaproject.adapter.getCurrentOrderList
 import com.example.jimenaproject.adapter.setProductToCurrentOrderList
 import com.example.jimenaproject.databinding.ActivityMainBinding
-import com.example.jimenaproject.adapter.OrdersHandle as OrdersHandle1
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,9 +34,9 @@ class MainActivity : AppCompatActivity() {
     private fun onClickIconAdd(productToAdd: ProductModel) {
 
         setProductToCurrentOrderList(productToAdd)
-        val newlist: MutableList<ProductModel> = getCurrentOrderList()
-        println(newlist)
-        println(newlist.size)
+        val messageToToast = "Se ha añadido " + productToAdd.productname + " al desayuno"
+        Toast.makeText(this, messageToToast, Toast.LENGTH_SHORT).show()
+
 
 
     }

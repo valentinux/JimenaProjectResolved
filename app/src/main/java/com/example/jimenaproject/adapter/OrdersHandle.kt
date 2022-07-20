@@ -4,7 +4,7 @@ import com.example.jimenaproject.CurrentOrderProvider
 import com.example.jimenaproject.CurrentOrderProvider.CurrentOrderList.setCurrentOrder
 import com.example.jimenaproject.ProductModel
 
-class OrdersHandle(productToAdd: ProductModel)
+class OrdersHandle()
 
 
 
