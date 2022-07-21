@@ -1,6 +1,5 @@
 package com.example.jimenaproject
 
-import android.util.Log
 
 class CurrentOrderProvider {
     companion object CurrentOrderList{

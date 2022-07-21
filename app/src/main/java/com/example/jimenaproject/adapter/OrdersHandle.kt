@@ -4,21 +4,30 @@ import com.example.jimenaproject.CurrentOrderProvider
 import com.example.jimenaproject.CurrentOrderProvider.CurrentOrderList.setCurrentOrder
 import com.example.jimenaproject.ProductModel
 
-class OrdersHandle
+class OrdersHandle(productToHandle: ProductModel){
+
+    val mproductToHandle = productToHandle
 
 
+    private val currentOrderList = CurrentOrderProvider.getCurrentOrder()
 
-private val currentOrderList = CurrentOrderProvider.getCurrentOrder()
 
+    fun setProductToCurrentOrderList(){
+        currentOrderList.add(mproductToHandle)
+        setCurrentOrder(currentOrderList)
+        println(currentOrderList)
+        println(currentOrderList.size)
+    }
 
-fun setProductToCurrentOrderList(mProductToAdd: ProductModel){
-    currentOrderList.add(mProductToAdd)
-    setCurrentOrder(currentOrderList)
+    fun getCurrentOrderList(): MutableList<ProductModel> {
+        return currentOrderList
+    }
+
 }
 
-fun getCurrentOrderList(): MutableList<ProductModel> {
-    return currentOrderList
-}
+
+
+
 
 
 
