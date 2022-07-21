@@ -4,16 +4,15 @@ import com.example.jimenaproject.CurrentOrderProvider
 import com.example.jimenaproject.CurrentOrderProvider.CurrentOrderList.setCurrentOrder
 import com.example.jimenaproject.ProductModel
 
-class OrdersHandle()
+class OrdersHandle
 
 
 
 private val currentOrderList = CurrentOrderProvider.getCurrentOrder()
 
 
-fun setProductToCurrentOrderList(productToAdd: ProductModel){
-    currentOrderList.add(productToAdd)
-    println(currentOrderList)
+fun setProductToCurrentOrderList(mProductToAdd: ProductModel){
+    currentOrderList.add(mProductToAdd)
     setCurrentOrder(currentOrderList)
 }
 

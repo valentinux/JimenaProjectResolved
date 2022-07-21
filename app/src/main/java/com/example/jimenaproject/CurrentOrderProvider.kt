@@ -12,7 +12,7 @@ class CurrentOrderProvider {
 
         fun setCurrentOrder(ListToReturn: MutableList<ProductModel>){
             // TODO set to actualized list to database
-            Log.i("Lista", currentOrderList.size.toString() )
+
         }
     }
 
