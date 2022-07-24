@@ -12,4 +12,6 @@
     <string name="IconHint">Pulsa dos veces en el icono para añadir al desayuno</string>
     <string name="IconAddDescription">Icon for add product to order</string>
     <string name="IconOrderDescription">Icon of orders</string>
+    <string name="Inicio" />
+    <string name="Inicio_2">Inicio</string>
 </resources>

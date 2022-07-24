@@ -21,6 +21,7 @@
         android:background="@drawable/ic_baseline_person_24"
 
 
+
         android:contentDescription="@string/user_button"
 
         app:layout_constraintBottom_toTopOf="@id/crdTitle"
@@ -90,6 +91,7 @@
 
         android:background="@drawable/border_radius"
         android:contentDescription="@string/btnLoginDescription"
+
         android:text="@string/Entrar"
         app:layout_constraintBottom_toTopOf="@+id/crdTitle"
         app:layout_constraintEnd_toStartOf="@+id/btnUser"
