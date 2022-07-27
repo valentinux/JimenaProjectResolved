@@ -14,4 +14,6 @@
     <string name="IconOrderDescription">Icon of orders</string>
     <string name="Inicio" />
     <string name="Inicio_2">Inicio</string>
+    <string name="btnLoginBack">Botón para volver a la actividad principal</string>
+    <string name="Volver">Volver</string>
 </resources>

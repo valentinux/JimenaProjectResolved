@@ -4,6 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/MainLayoutLogin"
+    android:background="@drawable/border_radius"
     tools:context=".LoginActivity">
+
+    <ImageButton
+        android:id="@+id/btnUser"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_baseline_person_24"
+        android:contentDescription="@string/user_button"
+        app:layout_constraintBottom_toTopOf="@id/crdTitle"
+        app:layout_constraintEnd_toEndOf="@id/MainLayoutLogin"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@id/MainLayoutLogin"
+        app:layout_constraintTop_toTopOf="@id/MainLayoutLogin"
+        app:layout_constraintVertical_bias="0.01999998"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crdTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#F06292"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="@id/MainLayoutLogin"
+        app:layout_constraintStart_toStartOf="@id/MainLayoutLogin"
+        app:layout_constraintTop_toBottomOf="@id/btnUser">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FDFAFA"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:layout_weight="2"
+                android:contentDescription="@string/logo_de_la_burra_jimena"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/im_logo" />
+
+            <TextView
+                android:id="@+id/textoLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lobster_regular"
+                android:gravity="center_horizontal|start"
+                android:paddingTop="20dp"
+                android:text="@string/desayunos_personalizados"
+                android:textAlignment="center"
+                android:textColor="#D142EA"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+
+        android:id="@+id/btnBack"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border_radius"
+        android:contentDescription="@string/btnLoginBack"
+        android:text="@string/Volver"
+        app:layout_constraintBottom_toTopOf="@+id/crdTitle"
+        app:layout_constraintEnd_toStartOf="@+id/btnUser"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/btnOrder"
+        android:layout_width="73dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/IconOrderDescription"
+        app:layout_constraintEnd_toStartOf="@+id/btnBack"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_hopping_cart_24"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

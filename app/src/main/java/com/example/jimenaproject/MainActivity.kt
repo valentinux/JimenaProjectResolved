@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initRecyclerView()
+
+        binding.btnLogin.setOnClickListener{
+            intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun initRecyclerView() {
