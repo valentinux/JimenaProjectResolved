@@ -66,7 +66,7 @@
                 android:paddingTop="20dp"
                 android:text="@string/desayunos_personalizados"
                 android:textAlignment="center"
-                android:textColor="#D142EA"
+                android:textColor="@color/magenta_variant"
                 android:textSize="34sp" />
         </LinearLayout>
 
@@ -102,5 +102,58 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_hopping_cart_24"
         tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="emailAddress"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/Email_hint"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/magenta_variant"
+        android:textColorHint="@color/magenta_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crdTitle" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="password"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/passwordhint"
+        android:inputType="textPassword"
+        android:textColor="@color/magenta_variant"
+        android:textColorHint="@color/magenta_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/white_pearl"
+        android:text="@string/enviar_resource"
+        android:textColor="@color/magenta_variant"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

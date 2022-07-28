@@ -16,4 +16,7 @@
     <string name="Inicio_2">Inicio</string>
     <string name="btnLoginBack">Botón para volver a la actividad principal</string>
     <string name="Volver">Volver</string>
+    <string name="Email_hint">Introduce tu Email</string>
+    <string name="passwordhint">Introduce tu contraseña</string>
+    <string name="enviar_resource">Enviar</string>
 </resources>
