@@ -164,7 +164,7 @@
                 app:layout_constraintTop_toBottomOf="@id/etPassword"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:background="@color/magenta"
+                android:background="@color/magenta_variant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sendLogin"
