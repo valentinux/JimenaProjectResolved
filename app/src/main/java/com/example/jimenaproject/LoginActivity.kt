@@ -15,10 +15,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBack.setOnClickListener{
-            intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+
 
     }
 }

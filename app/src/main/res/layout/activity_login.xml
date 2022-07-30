@@ -72,23 +72,6 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-
-        android:id="@+id/btnBack"
-        android:layout_width="116dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/border_radius"
-        android:contentDescription="@string/btnLoginBack"
-        android:text="@string/Volver"
-        app:layout_constraintBottom_toTopOf="@+id/crdTitle"
-        app:layout_constraintEnd_toStartOf="@+id/btnUser"
-        app:layout_constraintHorizontal_bias="0.935"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/btnOrder"
@@ -96,64 +79,106 @@
         android:layout_height="43dp"
         android:layout_marginTop="4dp"
         android:contentDescription="@string/IconOrderDescription"
-        app:layout_constraintEnd_toStartOf="@+id/btnBack"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintEnd_toStartOf="@+id/btnUser"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_hopping_cart_24"
         tools:ignore="ImageContrastCheck" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crdTitle2"
         android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="emailAddress"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="@string/Email_hint"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/magenta_variant"
-        android:textColorHint="@color/magenta_variant"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/crdTitle" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="password"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="@string/passwordhint"
-        android:inputType="textPassword"
-        android:textColor="@color/magenta_variant"
-        android:textColorHint="@color/magenta_variant"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/common_margin_max"
         android:background="@color/white_pearl"
-        android:text="@string/enviar_resource"
-        android:textColor="@color/magenta_variant"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="@id/MainLayoutLogin"
+        app:layout_constraintStart_toStartOf="@id/MainLayoutLogin"
+        app:layout_constraintTop_toBottomOf="@id/crdTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_login"
+                android:textSize="26sp"
+                android:textColor="@color/magenta_variant"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/common_margin_max"
+                android:paddingTop="@dimen/common_margin_max"
+                android:paddingStart="@dimen/common_margin_min"
+                android:paddingEnd="@dimen/common_margin_min"
+                />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_margin_middle"
+                android:autofillHints="emailAddress"
+                android:background="@color/white"
+                android:hint="@string/IntroEmail"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/magenta"
+                android:paddingStart="@dimen/common_margin_min"
+                android:paddingEnd="@dimen/common_margin_min"
+                android:paddingBottom="@dimen/common_margin_max"
+                android:textColor="@color/magenta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintEnterPassword"
+                android:textColorHint="@color/magenta"
+                android:background="@color/white"
+                android:paddingStart="@dimen/common_margin_min"
+                android:paddingEnd="@dimen/common_margin_min"
+                android:paddingBottom="@dimen/common_margin_max"
+                android:autofillHints="password"
+                android:textColor="@color/magenta"/>
+
+            <Button
+                android:id="@+id/btnSendLogin"
+                app:layout_constraintTop_toBottomOf="@id/etPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/magenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sendLogin"
+                android:padding="@dimen/common_margin_min"
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

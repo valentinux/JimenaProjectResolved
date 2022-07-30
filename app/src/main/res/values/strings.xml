@@ -19,4 +19,8 @@
     <string name="Email_hint">Introduce tu Email</string>
     <string name="passwordhint">Introduce tu contraseña</string>
     <string name="enviar_resource">Enviar</string>
+    <string name="IntroEmail">Introduce tu Email</string>
+    <string name="hintEnterPassword">Introduce tu password</string>
+    <string name="text_login">Introduce tus credenciales</string>
+    <string name="sendLogin">Enviar</string>
 </resources>
