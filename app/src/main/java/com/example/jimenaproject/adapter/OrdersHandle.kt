@@ -7,7 +7,7 @@ import com.example.jimenaproject.ProductModel
 
 class OrdersHandle(productToHandle: ProductModel){
 
-   private val mproductToHandle = productToHandle
+   private val mProductsToHandle = productToHandle
 
 
     private val currentOrderList = getCurrentOrder()
@@ -15,7 +15,7 @@ class OrdersHandle(productToHandle: ProductModel){
 
     fun setProductToCurrentOrderList(){
 
-        currentOrderList.add(mproductToHandle)
+        currentOrderList.add(mProductsToHandle)
         setCurrentOrder(currentOrderList)
         println(currentOrderList)
         println(currentOrderList.size)

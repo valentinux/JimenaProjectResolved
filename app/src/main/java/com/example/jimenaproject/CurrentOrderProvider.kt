@@ -9,8 +9,7 @@ class CurrentOrderProvider {
             return currentOrderList
         }
 
-        fun setCurrentOrder(ListToReturn: MutableList<ProductModel>){
-            // TODO set to actualized list to database
+        fun setCurrentOrder(currentOrderList: MutableList<ProductModel>){
 
         }
     }
