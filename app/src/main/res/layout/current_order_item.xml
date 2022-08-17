@@ -35,19 +35,49 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Nombre del producto" />
+
+
             <TextView
                 android:id="@+id/tvCountProducts"
-                app:layout_constraintStart_toEndOf="@id/tvnameProduct"
-                app:layout_constraintTop_toTopOf="parent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/magenta"
+                android:layout_marginStart="136dp"
                 android:paddingStart="@dimen/common_margin_max"
                 android:paddingEnd="@dimen/common_margin_max"
+                android:textColor="@color/magenta"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                tools:text="Cantidad: 2" />
+                app:layout_constraintStart_toEndOf="@id/tvnameProduct"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="2" />
+
+
+            <ImageButton
+                android:id="@+id/ibAddCount"
+                android:contentDescription="@string/button_to_increase_product"
+                android:layout_width="34dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/pink"
+                android:src="@drawable/ic_add"
+                app:layout_constraintEnd_toStartOf="@+id/tvCountProducts"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/tvnameProduct"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibCountDown"
+                android:contentDescription="@string/button_to_substract_product"
+                android:layout_width="34dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/pink"
+                android:src="@drawable/ic_horizontal_rule"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/tvCountProducts"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
