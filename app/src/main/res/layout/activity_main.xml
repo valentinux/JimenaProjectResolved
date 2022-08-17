@@ -14,6 +14,16 @@
     tools:visibility="visible">
 
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="18dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/Red"
+        app:layout_constraintEnd_toEndOf="@id/btnOrder"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/btnUser"
         android:layout_width="48dp"
@@ -128,9 +138,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_hopping_cart_24"
-        tools:ignore="ImageContrastCheck"/>
-
-
+        tools:ignore="ImageContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

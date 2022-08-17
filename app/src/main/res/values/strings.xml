@@ -23,4 +23,6 @@
     <string name="hintEnterPassword">Introduce tu password</string>
     <string name="text_login">Introduce tus credenciales</string>
     <string name="sendLogin">Enviar</string>
+    <string name="button_to_subtract_product">button to subtract product</string>
+    <string name="button_to_increase_product">button to increase product</string>
 </resources>
