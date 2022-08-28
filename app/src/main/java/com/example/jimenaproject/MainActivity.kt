@@ -29,6 +29,11 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnOrder.setOnClickListener{
+            val intentCurrentOrder = Intent(this, CurrentOrderActivity::class.java)
+            startActivity(intentCurrentOrder)
+        }
     }
 
     private fun initRecyclerView() {
