@@ -28,4 +28,9 @@
     <string name="button_to_subtract_product2">button to subtract product</string>
     <string name="Products_added_title">Contenido del desayuno añadido:</string>
     <string name="btn_confirm_order">Confirmar desayuno</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_user_name">Nombre de usuario</string>
+    <string name="helper_required">Necesario</string>
+    <string name="edit_User_title_add">Editar usuario</string>
 </resources>
